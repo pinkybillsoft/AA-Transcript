@@ -1,0 +1,196 @@
+/* ============================================
+   CONTACT PAGE SPECIFIC STYLES
+   ============================================ */
+
+/* Page-specific styling for section */
+.section {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  padding: var(--spacing-5xl) 0;
+  min-height: 400px;
+}
+
+/* Main heading (h1) */
+.section h1 {
+  color: var(--color-text-primary);
+  font-size: clamp(var(--font-size-3xl), 5vw, var(--font-size-5xl));
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+  position: relative;
+  padding-bottom: var(--spacing-lg);
+}
+
+.section h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  border-radius: var(--radius-full);
+}
+
+/* Intro paragraph */
+.section > .container > p {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto var(--spacing-3xl);
+  text-align: center;
+}
+
+/* Contact Cards Grid */
+.section .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-xl);
+  margin: var(--spacing-3xl) auto;
+  max-width: 1000px;
+}
+
+/* Contact Cards */
+.section .card {
+  background: white;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  text-align: center;
+  transition: all var(--transition-slow);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.section .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  transform: scaleX(0);
+  transition: transform var(--transition-slow);
+}
+
+.section .card:hover {
+  border-color: #0ea5e9;
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-8px);
+}
+
+.section .card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Card Icons (using emojis) */
+.section .card h3::before {
+  display: block;
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.section .card:nth-child(1) h3::before {
+  content: '📞';
+}
+
+.section .card:nth-child(2) h3::before {
+  content: '✉️';
+}
+
+.section .card:nth-child(3) h3::before {
+  content: '📍';
+}
+
+/* Card Headings */
+.section .card h3 {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Card Content */
+.section .card p {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  line-height: 1.6;
+  margin-bottom: 0;
+  word-break: break-word;
+}
+
+/* Email Link */
+.section .card a {
+  color: #0ea5e9;
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: color var(--transition-fast);
+}
+
+.section .card a:hover {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+/* Call to Action Enhancement */
+.section .card:hover h3 {
+  color: #0ea5e9;
+}
+
+/* Container max-width */
+.section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .section .grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-3xl) 0;
+  }
+  
+  .section h1 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .section > .container > p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-2xl);
+  }
+  
+  .section .grid-3 {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .section .card {
+    padding: var(--spacing-xl);
+  }
+  
+  .section .card h3::before {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .section .card h3 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .section .card p {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 480px) {
+  .section .card p {
+    font-size: var(--font-size-sm);
+  }
+}
