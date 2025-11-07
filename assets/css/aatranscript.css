@@ -1,17 +1,18 @@
 /* ============================================
-   PINKYBILL PAGE SPECIFIC STYLES
+   AATRANSCRIPT PAGE SPECIFIC STYLES
    ============================================ */
 
 /* Page-specific styling for section */
+body:has(title:contains("PinkyBill")) .section,
 .section {
-  /* background: linear-gradient(135deg, #D0F0F5 0%, #54a2ae 100%); */
+  background: #F8F9FA;
   padding: var(--spacing-5xl) 0;
   min-height: 400px;
 }
 
 /* Main heading (h1) */
 .section h1 {
-  color: #136877;
+  color: #0227AC;
   font-size: clamp(var(--font-size-3xl), 5vw, var(--font-size-5xl));
   margin-bottom: var(--spacing-lg);
   text-align: center;
@@ -27,7 +28,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #0A7D8E, #14A3B8);
+  background: linear-gradient(90deg, #0227AC, #2563eb);
   border-radius: var(--radius-full);
 }
 
@@ -35,18 +36,19 @@
 .section > .container > p:first-of-type {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
-  color: #0A4D59;
+  color: #0227AC;
   text-align: center;
   margin-bottom: var(--spacing-xl);
   background: white;
   padding: var(--spacing-md) var(--spacing-xl);
-  border-radius: var(--radius-lg);
+  border-radius: 10px;
   display: inline-block;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   width: 100%;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  border-left: 3px solid #0227AC;
 }
 
 /* Second paragraph (intro) */
@@ -58,15 +60,14 @@
   margin: 0 auto var(--spacing-3xl);
   background: white;
   padding: var(--spacing-xl);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
-  border-left: 4px solid #0A7D8E;
-  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 3px solid #0227AC;
 }
 
 /* Section headings (h2) */
 .section h2 {
-  color: #0A4D59;
+  color: #0227AC;
   font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-3xl));
   margin-top: var(--spacing-4xl);
   margin-bottom: var(--spacing-xl);
@@ -85,7 +86,7 @@
   top: 0;
   bottom: 0;
   width: 5px;
-  background: linear-gradient(180deg, #0A7D8E, #14A3B8);
+  background: linear-gradient(180deg, #0227AC, #2563eb);
   border-radius: var(--radius-full);
 }
 
@@ -100,9 +101,10 @@
   margin-bottom: var(--spacing-xl);
   background: white;
   padding: var(--spacing-lg) var(--spacing-xl);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   text-align: left;
+  border-left: 3px solid #0227AC;
 }
 
 /* Lists */
@@ -111,25 +113,26 @@
   margin: var(--spacing-xl) auto var(--spacing-2xl);
   background: white;
   padding: var(--spacing-xl);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-md);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   max-width: 900px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--spacing-md);
   text-align: left;
+  border-left: 3px solid #0227AC;
 }
 
 .section ul li {
   position: relative;
   padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) var(--spacing-3xl);
-  background: linear-gradient(135deg, #b4dfe785 0%, #0a7c8e85 100%);
-  border-radius: var(--radius-md);
+  background: #FAFBFC;
+  border-radius: 8px;
   color: var(--color-text-secondary);
   font-size: var(--font-size-base);
   line-height: 1.6;
   transition: all var(--transition-base);
-  border: 1px solid #B8E6F0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
 }
 
 .section ul li::before {
@@ -140,7 +143,7 @@
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
-  background: linear-gradient(135deg, #0A7D8E, #14A3B8);
+  background: linear-gradient(135deg, #0227AC, #2563eb);
   color: white;
   border-radius: var(--radius-full);
   display: flex;
@@ -152,14 +155,13 @@
 
 .section ul li:hover {
   background: white;
-  border-color: #0A7D8E;
   transform: translateX(4px);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 /* Nested list items with strong tags */
 .section ul li strong {
-  color: #0A4D59;
+  color: #0227AC;
   font-weight: var(--font-weight-semibold);
   display: block;
   margin-bottom: var(--spacing-xs);
@@ -167,26 +169,26 @@
 
 /* Links in content */
 .section a {
-  color: #0A7D8E;
+  color: #0227AC;
   font-weight: var(--font-weight-semibold);
   text-decoration: underline;
   transition: color var(--transition-fast);
 }
 
 .section a:hover {
-  color: #0A4D59;
+  color: #011A6B;
   text-decoration: underline;
 }
 
 /* Special styling for "Get Started" section */
 .section > .container > h2:last-of-type {
-  background: linear-gradient(135deg, #0A7D8E 0%, #0A4D59 100%);
+  background: linear-gradient(135deg, #0227AC 0%, #011A6B 100%);
   color: white;
   padding: var(--spacing-lg) var(--spacing-xl);
-  border-radius: var(--radius-xl);
+  border-radius: 10px;
   text-align: center;
   margin-top: var(--spacing-4xl);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .section > .container > h2:last-of-type::before {
@@ -194,32 +196,32 @@
 }
 
 .section > .container > p:last-of-type {
-  background: linear-gradient(135deg, #E8F7FA 0%, #D0F0F5 100%);
-  border: 2px solid #0A7D8E;
+  background: white;
   padding: var(--spacing-xl);
-  border-radius: var(--radius-xl);
+  border-radius: 10px;
   text-align: center;
   font-size: var(--font-size-xl);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 3px solid #0227AC;
 }
 
 .section > .container > p:last-of-type a {
   display: inline-block;
-  background: #0A7D8E;
+  background: #0227AC;
   color: white;
   padding: var(--spacing-md) var(--spacing-2xl);
-  border-radius: var(--radius-lg);
+  border-radius: 8px;
   text-decoration: none;
   font-weight: var(--font-weight-bold);
   transition: all var(--transition-base);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   margin-left: var(--spacing-sm);
 }
 
 .section > .container > p:last-of-type a:hover {
-  background: #0A4D59;
+  background: #011A6B;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   text-decoration: none;
 }
 
