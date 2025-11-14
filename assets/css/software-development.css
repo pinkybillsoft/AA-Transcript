@@ -1,147 +1,139 @@
 /* ============================================
-   PINKYBILL PAGE SPECIFIC STYLES
+   SOFTWARE DEVELOPMENT PAGE - REDESIGNED STYLES
    ============================================ */
 
-/* Page-specific styling for section */
-body:has(title:contains("PinkyBill")) .section,
-.section {
-  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
-  padding: var(--spacing-5xl) 0;
-  min-height: 400px;
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.dev-hero {
+  background: linear-gradient(135deg, #00007C 0%, #000058 100%);
+  padding: var(--spacing-6xl) 0;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Main heading (h1) */
-.section h1 {
-  color: #0284c7;
-  font-size: clamp(var(--font-size-3xl), 5vw, var(--font-size-5xl));
+.dev-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.03) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.dev-hero .container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.dev-hero h1 {
+  color: #FFFFFF;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   margin-bottom: var(--spacing-lg);
   text-align: center;
-  position: relative;
-  padding-bottom: var(--spacing-lg);
 }
 
-.section h1::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
-  border-radius: var(--radius-full);
-}
-
-/* First paragraph (subtitle) */
-.section > .container > p:first-of-type {
+.dev-hero .subtitle {
   font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-semibold);
-  color: #0369a1;
+  color: rgba(255, 255, 255, 0.9);
   text-align: center;
   margin-bottom: var(--spacing-xl);
-  background: white;
-  padding: var(--spacing-md) var(--spacing-xl);
-  border-radius: var(--radius-lg);
-  display: inline-block;
-  box-shadow: var(--shadow-md);
-  width: 100%;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: var(--font-weight-semibold);
 }
 
-/* Second paragraph (intro) */
-.section > .container > p:nth-of-type(2) {
+.dev-hero .intro {
   font-size: var(--font-size-lg);
-  line-height: 1.8;
-  color: var(--color-text-secondary);
-  max-width: 900px;
-  margin: 0 auto var(--spacing-3xl);
-  background: white;
-  padding: var(--spacing-xl);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
-  border-left: 4px solid #0ea5e9;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: var(--line-height-relaxed);
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-2xl);
+  border-radius: var(--radius-2xl);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Section headings (h2) */
-.section h2 {
-  color: #0284c7;
-  font-size: clamp(var(--font-size-2xl), 4vw, var(--font-size-3xl));
-  margin-top: var(--spacing-4xl);
-  margin-bottom: var(--spacing-xl);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 900px;
+/* ============================================
+   CONTENT SECTIONS
+   ============================================ */
+.dev-content {
+  background: var(--color-background);
+  padding: var(--spacing-6xl) 0;
+}
+
+.dev-section {
+  max-width: 1000px;
+  margin: 0 auto var(--spacing-5xl);
+  padding: var(--spacing-4xl);
+  background: var(--color-surface);
+  border-radius: var(--radius-2xl);
+  border: 2px solid var(--color-border);
+  box-shadow: var(--shadow-md);
   position: relative;
-  padding-left: var(--spacing-lg);
-  text-align: left;
 }
 
-.section h2::before {
+.dev-section::before {
   content: '';
   position: absolute;
-  left: 0;
   top: 0;
-  bottom: 0;
+  left: 0;
   width: 5px;
-  background: linear-gradient(180deg, #0ea5e9, #38bdf8);
-  border-radius: var(--radius-full);
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: var(--radius-2xl) 0 0 var(--radius-2xl);
 }
 
-/* Regular paragraphs */
-.section > .container > p {
-  font-size: var(--font-size-lg);
-  line-height: 1.8;
-  color: var(--color-text-secondary);
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+.dev-section h2 {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-3xl);
   margin-bottom: var(--spacing-xl);
-  background: white;
-  padding: var(--spacing-lg) var(--spacing-xl);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  text-align: left;
+  padding-left: var(--spacing-md);
 }
 
-/* Lists */
-.section ul {
-  list-style: none;
-  margin: var(--spacing-xl) auto var(--spacing-2xl);
-  background: white;
-  padding: var(--spacing-xl);
-  border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-md);
-  max-width: 900px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--spacing-md);
-  text-align: left;
-}
-
-.section ul li {
-  position: relative;
-  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) var(--spacing-3xl);
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  border-radius: var(--radius-md);
+.dev-section > p {
+  font-size: var(--font-size-lg);
   color: var(--color-text-secondary);
-  font-size: var(--font-size-base);
-  line-height: 1.6;
-  transition: all var(--transition-base);
-  border: 1px solid #bae6fd;
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-xl);
+  padding-left: var(--spacing-md);
 }
 
-.section ul li::before {
+/* ============================================
+   LISTS
+   ============================================ */
+.dev-section ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.dev-section ul li {
+  background: var(--color-background);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--color-border);
+  transition: all var(--transition-base);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.dev-section ul li::before {
   content: '✓';
-  position: absolute;
-  left: var(--spacing-md);
-  top: 50%;
-  transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
-  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
-  color: white;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: var(--color-primary);
+  color: #FFFFFF;
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -150,136 +142,142 @@ body:has(title:contains("PinkyBill")) .section,
   font-size: var(--font-size-base);
 }
 
-.section ul li:hover {
-  background: white;
-  border-color: #0ea5e9;
-  transform: translateX(4px);
-  box-shadow: var(--shadow-sm);
-}
-
-/* Nested list items with strong tags */
-.section ul li strong {
-  color: #0284c7;
-  font-weight: var(--font-weight-semibold);
-  display: block;
-  margin-bottom: var(--spacing-xs);
-}
-
-/* Links in content */
-.section a {
-  color: #0ea5e9;
-  font-weight: var(--font-weight-semibold);
-  text-decoration: underline;
-  transition: color var(--transition-fast);
-}
-
-.section a:hover {
-  color: #0284c7;
-  text-decoration: underline;
-}
-
-/* Special styling for "Get Started" section */
-.section > .container > h2:last-of-type {
-  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-  color: white;
-  padding: var(--spacing-lg) var(--spacing-xl);
-  border-radius: var(--radius-xl);
-  text-align: center;
-  margin-top: var(--spacing-4xl);
+.dev-section ul li:hover {
+  transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
 }
 
-.section > .container > h2:last-of-type::before {
-  display: none;
+.dev-section ul li:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-accent);
 }
 
-.section > .container > p:last-of-type {
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  border: 2px solid #0ea5e9;
-  padding: var(--spacing-xl);
-  border-radius: var(--radius-xl);
+/* ============================================
+   CTA SECTION
+   ============================================ */
+.dev-cta {
+  background: var(--gradient-primary);
+  padding: var(--spacing-5xl);
+  border-radius: var(--radius-3xl);
   text-align: center;
+  box-shadow: var(--shadow-2xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.dev-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.dev-cta h2 {
+  color: #FFFFFF;
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.dev-cta p {
+  color: rgba(255, 255, 255, 0.9);
   font-size: var(--font-size-xl);
-  box-shadow: var(--shadow-lg);
+  margin-bottom: var(--spacing-2xl);
+  line-height: var(--line-height-relaxed);
+  position: relative;
+  z-index: 1;
 }
 
-.section > .container > p:last-of-type a {
+.dev-cta a {
   display: inline-block;
-  background: #0ea5e9;
-  color: white;
-  padding: var(--spacing-md) var(--spacing-2xl);
-  border-radius: var(--radius-lg);
-  text-decoration: none;
+  background: var(--gradient-accent);
+  color: #FFFFFF;
+  padding: var(--spacing-lg) var(--spacing-3xl);
+  border-radius: var(--radius-xl);
   font-weight: var(--font-weight-bold);
-  transition: all var(--transition-base);
-  box-shadow: var(--shadow-md);
-  margin-left: var(--spacing-sm);
-}
-
-.section > .container > p:last-of-type a:hover {
-  background: #0284c7;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-xl);
+  font-size: var(--font-size-lg);
   text-decoration: none;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 20px rgba(0, 102, 204, 0.3);
+  position: relative;
+  z-index: 1;
 }
 
-/* Container max-width */
-.section .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
+.dev-cta a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0, 102, 204, 0.4);
+  background: var(--color-accent-dark);
 }
 
-/* Center all direct content */
-.section > .container > * {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .section ul {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-sm);
-  }
-}
-
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
 @media (max-width: 768px) {
-  .section {
-    padding: var(--spacing-3xl) 0;
+  .dev-hero {
+    padding: var(--spacing-4xl) 0;
   }
   
-  .section h1 {
+  .dev-hero h1 {
     font-size: var(--font-size-2xl);
   }
   
-  .section h2 {
-    font-size: var(--font-size-xl);
-    margin-top: var(--spacing-2xl);
-  }
-  
-  .section > .container > p:first-of-type {
+  .dev-hero .subtitle {
     font-size: var(--font-size-lg);
-    padding: var(--spacing-sm) var(--spacing-md);
   }
   
-  .section > .container > p:nth-of-type(2),
-  .section > .container > p {
+  .dev-hero .intro {
     font-size: var(--font-size-base);
-    padding: var(--spacing-md);
+    padding: var(--spacing-xl);
   }
   
-  .section ul {
-    padding: var(--spacing-md);
+  .dev-content {
+    padding: var(--spacing-4xl) 0;
   }
   
-  .section ul li {
-    padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) var(--spacing-2xl);
+  .dev-section {
+    padding: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
   }
   
-  .section ul li::before {
-    width: 24px;
-    height: 24px;
-    font-size: var(--font-size-sm);
+  .dev-section h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .dev-section > p {
+    font-size: var(--font-size-base);
+  }
+  
+  .dev-section ul {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .dev-cta {
+    padding: var(--spacing-3xl) var(--spacing-xl);
+  }
+  
+  .dev-cta h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .dev-cta p {
+    font-size: var(--font-size-base);
+  }
+  
+  .dev-cta a {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-base);
+    width: 100%;
   }
 }

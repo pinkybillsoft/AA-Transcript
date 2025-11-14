@@ -3,53 +3,92 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>About Us - AATranscript</title>
+  <title>About Us - AATranscript | Medical Billing Experts</title>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/about-us.css">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body id="top">
   
 <header class="navbar">
   <div class="container inner">
     <a class="logo" href="index.html">
-      <!-- <img src="assets/images/logo.png" alt="AATranscript logo"> -->
-      <span>AATranscript</span>
+      <img src="assets/images/logo.svg" alt="AATranscript logo">
     </a>
     <nav class="menu" aria-label="Primary">
-      <a class="" href="index.html">Home</a>
-      <a class="" href="services.html">Services</a>
-      <!-- <a class="" href="pinkybill.html">PinkyBill</a>
-      <a class="" href="pinkymed.html">PinkyMed</a>
-      <a class="" href="aafileshare.html">AAFileShare</a> -->
-      <a class="" href="software-development.html">Software Development</a>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
       <a class="active" href="about-us.html">About Us</a>
-      <a class="" href="privacy-policy.html">Privacy Policy</a>
-      <a class="" href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <button class="burger" aria-label="Menu">Menu</button>
+    <button class="burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </header>
 
   <main>
     
-    <section class="section">
+    <!-- About Hero -->
+    <section class="about-hero">
       <div class="container">
         <h1>About Us</h1>
-        <p>AA Transcript is a medical billing and transcription company based in Las Vegas, Nevada, providing services to doctors across Nevada and California. We specialize in the workers’ compensation field with a team of trained professionals in ACOEM and MTUS guidelines. Our association brings cost reductions, performance improvements, and new ways of working—tailored to each client.</p>
+        <p class="intro">AA Transcript is a medical billing and transcription company based in Las Vegas, Nevada, providing services to doctors across Nevada and California. We specialize in the workers' compensation field with a team of trained professionals in ACOEM and MTUS guidelines. Our association brings cost reductions, performance improvements, and new ways of working—tailored to each client.</p>
+      </div>
+    </section>
 
-        <h2>Experienced Billing Professionals</h2>
-        <p>Our billing team consists of professionals with more than 20 years of experience in medical billing, serving multiple specialties including dermatology, orthopedics, internal medicine, and chiropractic.</p>
+    <!-- Main Content -->
+    <section class="about-content">
+      <div class="container">
+        
+        <!-- Experienced Professionals -->
+        <div class="about-section">
+          <h2>Experienced Billing Professionals</h2>
+          <p>Our billing team consists of professionals with more than 20 years of experience in medical billing, serving multiple specialties including dermatology, orthopedics, internal medicine, and chiropractic.</p>
+        </div>
 
-        <h2>Call Center & Administrative Support</h2>
-        <p>We provide high-quality telephone and web-based services. Our call center professionals work around the clock managing collections and AR recovery.</p>
+        <!-- Call Center Support -->
+        <div class="about-section">
+          <h2>Call Center & Administrative Support</h2>
+          <p>We provide high-quality telephone and web-based services. Our call center professionals work around the clock managing collections and AR recovery.</p>
+        </div>
 
-        <h2>What We Offer</h2>
-        <ul>
-          <li>Revenue Cycle Management</li>
-          <li>Transcription Services</li>
-          <li>Administrative Services</li>
-          <li>Inbound & Outbound Call Center</li>
-        </ul>
+        <!-- What We Offer -->
+        <div class="about-section services-list-section">
+          <h2>What We Offer</h2>
+          <ul>
+            <li>Revenue Cycle Management</li>
+            <li>Transcription Services</li>
+            <li>Administrative Services</li>
+            <li>Inbound & Outbound Call Center</li>
+          </ul>
+        </div>
+
+        <!-- Optional: Highlights Section -->
+        <div class="highlights-section">
+          <h2>Why Choose Us</h2>
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <h3>20+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="highlight-item">
+              <h3>100%</h3>
+              <p>HIPAA Compliant</p>
+            </div>
+            <div class="highlight-item">
+              <h3>24/7</h3>
+              <p>Support Available</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -57,28 +96,42 @@
   
 <footer class="footer">
   <div class="container">
-    <div class="grid">
-      <div>
-        <h4>AA Transcript</h4>
+    <div class="footer-main">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="assets/images/logo.svg" alt="AATranscript" class="footer-logo">
+        </div>
         <p>Software development, medical billing & transcription services.</p>
-        <p><span class="badge">HIPAA-ready</span></p>
+        <span class="badge badge-hipaa">HIPAA-ready</span>
       </div>
-      <div>
+      
+      <div class="footer-col">
         <h4>Contact</h4>
-        <p><strong>Phone:</strong> (714) 914-8805</p>
-        <p><strong>Email:</strong> admin@aatranscript.com</p>
-        <p><strong>Address:</strong> 11284 Burning River St, Las Vegas, NV 89183</p>
+        <div class="contact-info">
+          <p><strong>Phone:</strong><br>(714) 914-8805</p>
+          <p><strong>Email:</strong><br>admin@aatranscript.com</p>
+          <p><strong>Address:</strong><br>11284 Burning River St<br>Las Vegas, NV 89183</p>
+        </div>
       </div>
-      <div>
-        <h4>Links</h4>
-        <p><a href="privacy-policy.html">Privacy Policy</a></p>
-        <p><a id="toTop" href="#top">Back to top ↑</a></p>
+      
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
     </div>
-    <div class="bottom">
-      <div class="container" style="display:flex;justify-content:space-between;gap:12px;">
-        <span>© 2025 AATranscript</span>
-        <span>Built for static hosting (GitHub Pages ready)</span>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <span>© 2025 AATranscript. All rights reserved.</span>
+          <a href="#top" class="back-to-top">Back to top ↑</a>
+        </div>
       </div>
     </div>
   </div>
