@@ -1,13 +1,13 @@
 /* ============================================
-   CONTACT PAGE - REDESIGNED STYLES
+   CONTACT PAGE - MODERN PROFESSIONAL DESIGN
    ============================================ */
 
 /* ============================================
    CONTACT HERO SECTION
    ============================================ */
 .contact-hero {
-  background: linear-gradient(135deg, #00007C 0%, #000058 100%);
-  padding: var(--spacing-6xl) 0 var(--spacing-5xl);
+  background: var(--gradient-hero);
+  padding: var(--spacing-7xl) 0 var(--spacing-6xl);
   position: relative;
   overflow: hidden;
 }
@@ -20,27 +20,28 @@
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.03) 0%, transparent 40%);
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(8, 145, 178, 0.1) 0%, transparent 40%);
   pointer-events: none;
 }
 
 .contact-hero .container {
   position: relative;
   z-index: 1;
-  max-width: 800px;
+  max-width: 850px;
   text-align: center;
 }
 
 .contact-hero h1 {
   color: #FFFFFF;
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  margin-bottom: var(--spacing-lg);
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  margin-bottom: var(--spacing-xl);
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-hero p {
   font-size: var(--font-size-xl);
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.95);
   line-height: var(--line-height-relaxed);
   margin: 0;
 }
@@ -50,18 +51,18 @@
    ============================================ */
 .contact-content {
   background: var(--color-background);
-  padding: var(--spacing-6xl) 0;
+  padding: var(--spacing-7xl) 0;
 }
 
 .contact-content .container {
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
 /* Contact Cards Grid */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-3xl);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-4xl);
   margin: 0 auto;
 }
 
@@ -70,7 +71,7 @@
   background: var(--color-surface);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-2xl);
-  padding: var(--spacing-3xl);
+  padding: var(--spacing-4xl);
   text-align: center;
   transition: all var(--transition-base);
   box-shadow: var(--shadow-sm);
@@ -84,44 +85,65 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
-  background: var(--color-accent);
+  height: 5px;
+  background: var(--gradient-accent);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--transition-base);
+}
+
+.contact-card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(8, 145, 178, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform var(--transition-slow);
 }
 
 .contact-card:hover::before {
   transform: scaleX(1);
 }
 
+.contact-card:hover::after {
+  transform: translate(-50%, -50%) scale(2);
+}
+
 .contact-card:hover {
   border-color: var(--color-accent);
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-10px);
+  box-shadow: var(--shadow-2xl);
+  transform: translateY(-12px);
   background: var(--color-background);
 }
 
 /* Card Icons */
 .contact-icon {
-  font-size: 3.5rem;
-  margin-bottom: var(--spacing-xl);
+  font-size: 4rem;
+  margin-bottom: var(--spacing-2xl);
   display: block;
-  filter: grayscale(20%);
+  filter: grayscale(0%);
   transition: transform var(--transition-base);
+  position: relative;
+  z-index: 1;
 }
 
 .contact-card:hover .contact-icon {
-  transform: scale(1.1) rotate(-5deg);
+  transform: scale(1.15) rotateY(10deg);
 }
 
 /* Card Headings */
 .contact-card h3 {
   color: var(--color-text-primary);
   font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
   font-weight: var(--font-weight-bold);
   transition: color var(--transition-base);
+  position: relative;
+  z-index: 1;
 }
 
 .contact-card:hover h3 {
@@ -135,6 +157,8 @@
   line-height: var(--line-height-relaxed);
   margin: 0;
   word-break: break-word;
+  position: relative;
+  z-index: 1;
 }
 
 /* Email Link */
@@ -144,11 +168,28 @@
   font-weight: var(--font-weight-semibold);
   transition: all var(--transition-fast);
   display: inline-block;
+  position: relative;
+}
+
+.contact-card a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-base);
 }
 
 .contact-card a:hover {
   color: var(--color-accent-dark);
-  transform: translateY(-2px);
+}
+
+.contact-card a:hover::after {
+  transform: scaleX(1);
 }
 
 /* ============================================
@@ -156,19 +197,19 @@
    ============================================ */
 .contact-cta {
   background: var(--color-surface);
-  padding: var(--spacing-5xl) 0;
+  padding: var(--spacing-6xl) 0;
   text-align: center;
 }
 
 .contact-cta .container {
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .cta-box {
   background: var(--gradient-primary);
-  padding: var(--spacing-4xl);
+  padding: var(--spacing-5xl);
   border-radius: var(--radius-3xl);
-  box-shadow: var(--shadow-2xl);
+  box-shadow: var(--shadow-colored);
   position: relative;
   overflow: hidden;
 }
@@ -178,47 +219,48 @@
   position: absolute;
   top: -50%;
   right: -20%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
   border-radius: 50%;
 }
 
 .cta-box h2 {
   color: #FFFFFF;
-  font-size: var(--font-size-3xl);
-  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-xl);
   position: relative;
   z-index: 1;
 }
 
 .cta-box p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-2xl);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-3xl);
   position: relative;
   z-index: 1;
+  line-height: var(--line-height-relaxed);
 }
 
 .cta-box .btn {
-  background: var(--gradient-accent);
+  background: var(--gradient-warm);
   color: #FFFFFF;
-  padding: var(--spacing-lg) var(--spacing-3xl);
+  padding: 1.375rem 3.5rem;
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   border-radius: var(--radius-xl);
   text-decoration: none;
   display: inline-block;
   transition: all var(--transition-base);
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
   position: relative;
   z-index: 1;
 }
 
 .cta-box .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
-  background: var(--color-accent-dark);
+  box-shadow: 0 15px 40px rgba(249, 115, 22, 0.5);
+  background: var(--color-secondary-dark);
 }
 
 /* ============================================
@@ -226,18 +268,18 @@
    ============================================ */
 @media (max-width: 900px) {
   .contact-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-2xl);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-3xl);
   }
 }
 
 @media (max-width: 768px) {
   .contact-hero {
-    padding: var(--spacing-4xl) 0 var(--spacing-3xl);
+    padding: var(--spacing-5xl) 0 var(--spacing-4xl);
   }
   
   .contact-hero h1 {
-    font-size: var(--font-size-2xl);
+    font-size: clamp(2rem, 9vw, 2.75rem);
   }
   
   .contact-hero p {
@@ -245,20 +287,20 @@
   }
   
   .contact-content {
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-5xl) 0;
   }
   
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-2xl);
   }
   
   .contact-card {
-    padding: var(--spacing-2xl);
+    padding: var(--spacing-3xl);
   }
   
   .contact-icon {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   
   .contact-card h3 {
@@ -270,23 +312,23 @@
   }
   
   .contact-cta {
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-5xl) 0;
   }
   
   .cta-box {
-    padding: var(--spacing-3xl) var(--spacing-xl);
+    padding: var(--spacing-4xl) var(--spacing-xl);
   }
   
   .cta-box h2 {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-3xl);
   }
   
   .cta-box p {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-lg);
   }
   
   .cta-box .btn {
-    padding: var(--spacing-md) var(--spacing-xl);
+    padding: 1.25rem 2.5rem;
     font-size: var(--font-size-base);
     width: 100%;
   }

@@ -1,13 +1,14 @@
 /* ============================================
-   AATRANSCRIPT PAGE - CLEAN PROFESSIONAL DESIGN
+   SERVICE DETAIL PAGES - MODERN PROFESSIONAL DESIGN
+   (AATranscript, PinkyBill, PinkyMed, AAFileShare)
    ============================================ */
 
 /* ============================================
    HERO SECTION
    ============================================ */
 .aatranscript-hero {
-  background: linear-gradient(135deg, #00007C 0%, #000058 100%);
-  padding: var(--spacing-6xl) 0;
+  background: var(--gradient-hero);
+  padding: var(--spacing-7xl) 0;
   position: relative;
   overflow: hidden;
 }
@@ -20,42 +21,43 @@
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.03) 0%, transparent 40%);
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(8, 145, 178, 0.1) 0%, transparent 40%);
   pointer-events: none;
 }
 
 .aatranscript-hero .container {
   position: relative;
   z-index: 1;
-  max-width: 900px;
+  max-width: 950px;
 }
 
 .aatranscript-hero h1 {
   color: #FFFFFF;
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  margin-bottom: var(--spacing-lg);
+  font-size: clamp(2.75rem, 6vw, 4rem);
+  margin-bottom: var(--spacing-xl);
   text-align: center;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .aatranscript-hero .subtitle {
-  font-size: var(--font-size-xl);
-  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--font-size-2xl);
+  color: rgba(255, 255, 255, 0.95);
   text-align: center;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-2xl);
   font-weight: var(--font-weight-semibold);
 }
 
 .aatranscript-hero .intro {
   font-size: var(--font-size-lg);
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.9);
   line-height: var(--line-height-relaxed);
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
-  padding: var(--spacing-2xl);
+  background: rgba(255, 255, 255, 0.12);
+  padding: var(--spacing-3xl);
   border-radius: var(--radius-2xl);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 /* ============================================
@@ -63,18 +65,24 @@
    ============================================ */
 .aatranscript-content {
   background: var(--color-background);
-  padding: var(--spacing-6xl) 0;
+  padding: var(--spacing-7xl) 0;
 }
 
 .service-section {
-  max-width: 1000px;
-  margin: 0 auto var(--spacing-4xl);
-  padding: var(--spacing-3xl);
+  max-width: 1050px;
+  margin: 0 auto var(--spacing-5xl);
+  padding: var(--spacing-4xl);
   background: var(--color-surface);
   border-radius: var(--radius-2xl);
   border: 2px solid var(--color-border);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
   position: relative;
+  transition: all var(--transition-base);
+}
+
+.service-section:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
 }
 
 .service-section::before {
@@ -82,25 +90,30 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 5px;
+  width: 6px;
   height: 100%;
-  background: var(--color-accent);
+  background: var(--gradient-accent);
   border-radius: var(--radius-2xl) 0 0 var(--radius-2xl);
 }
 
 .service-section h2 {
   color: var(--color-text-primary);
   font-size: var(--font-size-3xl);
-  margin-bottom: var(--spacing-lg);
-  padding-left: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  padding-left: var(--spacing-lg);
 }
 
 .service-section p {
   font-size: var(--font-size-lg);
   color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
-  padding-left: var(--spacing-md);
+  padding-left: var(--spacing-lg);
   margin-bottom: 0;
+}
+
+.service-section strong {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-semibold);
 }
 
 /* ============================================
@@ -108,10 +121,10 @@
    ============================================ */
 .cta-section {
   background: var(--gradient-primary);
-  padding: var(--spacing-5xl);
+  padding: var(--spacing-6xl);
   border-radius: var(--radius-3xl);
   text-align: center;
-  box-shadow: var(--shadow-2xl);
+  box-shadow: var(--shadow-colored);
   position: relative;
   overflow: hidden;
 }
@@ -121,24 +134,24 @@
   position: absolute;
   top: -50%;
   right: -20%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
   border-radius: 50%;
 }
 
 .cta-section h2 {
   color: #FFFFFF;
-  font-size: var(--font-size-3xl);
-  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-xl);
   position: relative;
   z-index: 1;
 }
 
 .cta-section p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-2xl);
+  color: rgba(255, 255, 255, 0.95);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-3xl);
   line-height: var(--line-height-relaxed);
   position: relative;
   z-index: 1;
@@ -146,23 +159,23 @@
 
 .cta-section a {
   display: inline-block;
-  background: var(--gradient-accent);
+  background: var(--gradient-warm);
   color: #FFFFFF;
-  padding: var(--spacing-lg) var(--spacing-3xl);
+  padding: 1.375rem 3.5rem;
   border-radius: var(--radius-xl);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-lg);
   text-decoration: none;
   transition: all var(--transition-base);
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
   position: relative;
   z-index: 1;
 }
 
 .cta-section a:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
-  background: var(--color-accent-dark);
+  box-shadow: 0 15px 40px rgba(249, 115, 22, 0.5);
+  background: var(--color-secondary-dark);
 }
 
 /* ============================================
@@ -170,29 +183,29 @@
    ============================================ */
 @media (max-width: 768px) {
   .aatranscript-hero {
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-5xl) 0;
   }
   
   .aatranscript-hero h1 {
-    font-size: var(--font-size-2xl);
+    font-size: clamp(2rem, 9vw, 2.75rem);
   }
   
   .aatranscript-hero .subtitle {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-xl);
   }
   
   .aatranscript-hero .intro {
     font-size: var(--font-size-base);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-2xl);
   }
   
   .aatranscript-content {
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-5xl) 0;
   }
   
   .service-section {
     padding: var(--spacing-2xl);
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--spacing-4xl);
   }
   
   .service-section h2 {
@@ -204,19 +217,19 @@
   }
   
   .cta-section {
-    padding: var(--spacing-3xl) var(--spacing-xl);
+    padding: var(--spacing-4xl) var(--spacing-xl);
   }
   
   .cta-section h2 {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-3xl);
   }
   
   .cta-section p {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-lg);
   }
   
   .cta-section a {
-    padding: var(--spacing-md) var(--spacing-xl);
+    padding: 1.25rem 2.5rem;
     font-size: var(--font-size-base);
     width: 100%;
   }
