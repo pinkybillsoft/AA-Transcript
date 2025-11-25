@@ -107,7 +107,7 @@
 }
 
 .hero-cta .btn {
-  padding: 1.375rem 3rem;
+  padding: 1.175rem 2.7rem;
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -231,13 +231,12 @@
    ============================================ */
 .intro-section {
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-  padding: var(--spacing-7xl) 0;
+  padding: var(--spacing-5xl) 0;
 }
 
 .section-header {
   text-align: center;
   margin-bottom: var(--spacing-5xl);
-  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -256,7 +255,6 @@
 }
 
 .intro-content {
-  max-width: 1000px;
   margin: 0 auto;
   background: var(--color-background);
   padding: var(--spacing-5xl);
@@ -311,7 +309,7 @@
    ============================================ */
 .services-section {
   background: var(--color-surface);
-  padding: var(--spacing-8xl) 0;
+  padding: var(--spacing-6xl) 0;
   position: relative;
 }
 
@@ -336,7 +334,7 @@
   background: var(--color-background);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-2xl);
-  padding: var(--spacing-4xl);
+  padding: var(--spacing-2xl);
   transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
@@ -407,7 +405,7 @@
 }
 
 .service-icon {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: var(--spacing-xl);
   display: inline-block;
   filter: grayscale(0%);
@@ -477,7 +475,7 @@
    ============================================ */
 .value-section {
   background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-  padding: var(--spacing-8xl) 0;
+  padding: var(--spacing-6xl) 0;
 }
 
 .value-content {
@@ -545,7 +543,7 @@
 
 .stats-card {
   background: var(--gradient-primary);
-  padding: var(--spacing-4xl);
+  padding: var(--spacing-3xl);
   border-radius: var(--radius-3xl);
   box-shadow: var(--shadow-colored);
   display: flex;
@@ -568,7 +566,7 @@
 
 .stat {
   text-align: center;
-  padding: var(--spacing-2xl);
+  padding: var(--spacing-xl);
   background: rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-2xl);
   backdrop-filter: blur(10px);
@@ -619,7 +617,7 @@
    ============================================ */
 .cta-section {
   background: var(--color-surface);
-  padding: var(--spacing-8xl) 0;
+  padding: var(--spacing-6xl) 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -644,7 +642,7 @@
   position: relative;
   z-index: 1;
   background: var(--color-background);
-  padding: var(--spacing-6xl) var(--spacing-5xl);
+  padding: var(--spacing-5xl) var(--spacing-4xl);
   border-radius: var(--radius-3xl);
   box-shadow: var(--shadow-2xl);
   border: 2px solid var(--color-border);
@@ -664,7 +662,7 @@
 .cta-content h2 {
   color: var(--color-text-primary);
   margin-bottom: var(--spacing-2xl);
-  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-size: clamp(2.2rem, 4.5vw, 3rem);
 }
 
 .cta-content p {
@@ -680,7 +678,7 @@
 
 .cta-content .btn-cta {
   font-size: var(--font-size-xl);
-  padding: 1.5rem 3.5rem;
+  padding: 1.4rem 3.3rem;
 }
 
 @media (max-width: 768px) {

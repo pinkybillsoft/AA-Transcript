@@ -93,11 +93,11 @@
   --spacing-xl: 2rem;       /* 32px */
   --spacing-2xl: 2.5rem;    /* 40px */
   --spacing-3xl: 3rem;      /* 48px */
-  --spacing-4xl: 4rem;      /* 64px */
-  --spacing-5xl: 5rem;      /* 80px */
-  --spacing-6xl: 6rem;      /* 96px */
-  --spacing-7xl: 8rem;      /* 128px */
-  --spacing-8xl: 10rem;     /* 160px */
+  --spacing-4xl: 3.5rem;      /* 64px */
+  --spacing-5xl: 4rem;      /* 80px */
+  --spacing-6xl: 4.5rem;      /* 96px */
+  --spacing-7xl: 5rem;      /* 128px */
+  --spacing-8xl: 5.5rem;     /* 160px */
   
   /* Border Radius */
   --radius-sm: 0.375rem;    /* 6px */
@@ -298,7 +298,7 @@ a:hover {
 }
 
 .logo:hover img {
-  transform: rotate(-2deg) scale(1.05);
+  transform: scale(1.05);
 }
 
 .menu {
@@ -633,7 +633,7 @@ a:hover {
 .footer {
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: rgba(255, 255, 255, 0.9);
-  margin-top: var(--spacing-7xl);
+  /* margin-top: var(--spacing-7xl); */
   padding: var(--spacing-7xl) 0 0;
   position: relative;
 }
@@ -668,7 +668,7 @@ a:hover {
   align-items: center;
   gap: var(--spacing-md);
   margin-bottom: var(--spacing-xl);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
   background: #FFFFFF;
   border-radius: var(--radius-xl);
   width: fit-content;

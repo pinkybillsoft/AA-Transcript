@@ -51,7 +51,7 @@
    ============================================ */
 .contact-content {
   background: var(--color-background);
-  padding: var(--spacing-7xl) 0;
+  padding: var(--spacing-5xl) 0;
 }
 
 .contact-content .container {
@@ -71,7 +71,7 @@
   background: var(--color-surface);
   border: 2px solid var(--color-border);
   border-radius: var(--radius-2xl);
-  padding: var(--spacing-4xl);
+  padding: var(--spacing-2xl);
   text-align: center;
   transition: all var(--transition-base);
   box-shadow: var(--shadow-sm);
@@ -207,7 +207,7 @@
 
 .cta-box {
   background: var(--gradient-primary);
-  padding: var(--spacing-5xl);
+  padding: var(--spacing-3xl);
   border-radius: var(--radius-3xl);
   box-shadow: var(--shadow-colored);
   position: relative;
