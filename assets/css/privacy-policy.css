@@ -56,16 +56,17 @@
 }
 
 .privacy-content .container {
-  max-width: 950px;
+  max-width: 80%;
 }
 
 .privacy-section {
   background: var(--color-surface);
-  padding: var(--spacing-4xl);
+  padding: var(--spacing-3xl);
+  padding-bottom: 0;
   border-radius: var(--radius-2xl);
   border: 2px solid var(--color-border);
   box-shadow: var(--shadow-sm);
-  margin-bottom: var(--spacing-4xl);
+  margin-bottom: var(--spacing-3xl);
   transition: all var(--transition-base);
 }
 

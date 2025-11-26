@@ -28,7 +28,7 @@
 .about-hero .container {
   position: relative;
   z-index: 1;
-  max-width: 950px;
+  max-width: 1250px;
 }
 
 .about-hero h1 {
@@ -56,13 +56,13 @@
    ============================================ */
 .about-content {
   background: var(--color-background);
-  padding: var(--spacing-7xl) 0;
+  padding: var(--spacing-3xl) 0;
 }
 
 .about-section {
-  max-width: 1050px;
-  margin: 0 auto var(--spacing-5xl);
-  padding: var(--spacing-4xl);
+  /* max-width: 1050px; */
+  margin: 0 auto var(--spacing-4xl);
+  padding: var(--spacing-3xl);
   background: var(--color-surface);
   border-radius: var(--radius-2xl);
   border: 2px solid var(--color-border);
@@ -90,7 +90,6 @@
 .about-section h2 {
   color: var(--color-text-primary);
   font-size: var(--font-size-3xl);
-  margin-bottom: var(--spacing-xl);
   padding-left: var(--spacing-lg);
 }
 
@@ -129,7 +128,7 @@
 
 .services-list-section ul li {
   background: var(--color-background);
-  padding: var(--spacing-xl);
+  padding: var(--spacing-md) var(--spacing-xl);
   border-radius: var(--radius-xl);
   border: 2px solid var(--color-border);
   transition: all var(--transition-base);
@@ -177,9 +176,8 @@
    HIGHLIGHTS SECTION
    ============================================ */
 .highlights-section {
-  max-width: 1050px;
-  margin: var(--spacing-6xl) auto;
-  padding: var(--spacing-5xl);
+  margin: var(--spacing-4xl) auto;
+  padding: var(--spacing-3xl) var(--spacing-6xl);
   background: var(--gradient-primary);
   border-radius: var(--radius-3xl);
   box-shadow: var(--shadow-colored);
@@ -217,7 +215,7 @@
 
 .highlight-item {
   text-align: center;
-  padding: var(--spacing-2xl);
+  padding: var(--spacing-xl);
   background: rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-2xl);
   backdrop-filter: blur(10px);
