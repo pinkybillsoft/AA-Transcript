@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body id="top">
   
@@ -23,7 +23,7 @@
       <a href="services.html">Services</a>
       <a href="about-us.html">About Us</a>
       <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
     </nav>
     <button class="burger" aria-label="Menu">
       <span></span>
@@ -37,15 +37,26 @@
     
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-background"></div>
-      <div class="container">
-        <div class="hero-content">
-          <span class="hero-badge">Trusted Since 2009</span>
+      <div class="hero-content">
+        <div class="container">
+          <span class="hero-badge">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            Trusted Since 2009
+          </span>
           <h1>Optimize Business Processes in Your Practice</h1>
           <p class="hero-subtitle">Producing Accurate Medical Bills and Transcripts Since 2009.</p>
           <div class="hero-cta">
-            <a href="contact.html" class="btn btn-primary">Get Started Today</a>
-            <a href="services.html" class="btn btn-secondary">Explore Services</a>
+            <a href="contact.html" class="btn btn-primary">
+              Get Started Today
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </a>
+            <a href="services.html" class="btn btn-secondary">
+              Explore Services
+            </a>
           </div>
         </div>
       </div>
@@ -56,22 +67,38 @@
       <div class="container">
         <div class="trust-grid">
           <div class="trust-item">
-            <div class="trust-icon">🏥</div>
+            <div class="trust-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
             <h3>25+ Years</h3>
             <p>Industry Experience</p>
           </div>
           <div class="trust-item">
-            <div class="trust-icon">✓</div>
+            <div class="trust-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
             <h3>HIPAA Ready</h3>
             <p>Compliant & Secure</p>
           </div>
           <div class="trust-item">
-            <div class="trust-icon">⚡</div>
+            <div class="trust-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
             <h3>Fast Turnaround</h3>
             <p>Quick & Accurate</p>
           </div>
           <div class="trust-item">
-            <div class="trust-icon">🎯</div>
+            <div class="trust-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+              </svg>
+            </div>
             <h3>Specialized</h3>
             <p>Workers' Compensation</p>
           </div>
@@ -83,12 +110,17 @@
     <section class="section intro-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">About Our Services</span>
+          <span class="section-label">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            About Our Services
+          </span>
           <h2>Turn to the Expert in Medical Billing and Documentation</h2>
         </div>
-        <div class="">
-          <p class="section-intro" style="max-width: 100%; text-align:center;">AA Transcript offers medical billing, administrative services and transcription services to medical professionals in Nevada and California. Specializing in the workers' compensation field, we are experienced in streamlining medical documentation and boosting physicians' productivity.</p>
-          <p class="section-intro" style="max-width: 100%; text-align:center;">We'll take care of the records, documents, faxes, letters and charts so that you can focus on patient care.</p>
+        <div>
+          <p class="section-intro">AA Transcript offers medical billing, administrative services and transcription services to medical professionals in Nevada and California. Specializing in the workers' compensation field, we are experienced in streamlining medical documentation and boosting physicians' productivity.</p>
+          <p class="section-intro">We'll take care of the records, documents, faxes, letters and charts so that you can focus on patient care.</p>
         </div>
       </div>
     </section>
@@ -97,32 +129,64 @@
     <section class="section services-section">
       <div class="container">
         <div class="section-header">
-          <span class="section-badge">Our Expertise</span>
+          <span class="section-label">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            Our Expertise
+          </span>
           <h2>What We Do</h2>
           <p class="section-intro">Our company proudly serves dermatologists, chiropractors, orthopedists, pulmonologists, internal medicine and more.</p>
         </div>
         
         <div class="services-grid">
           <div class="service-card">
-            <div class="service-icon">💼</div>
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
             <h3>Medical Billing Services</h3>
             <p>End-to-end claims handling designed to reduce denials and improve turnaround time for your practice.</p>
-            <a href="services.html" class="service-link">Learn More →</a>
+            <a href="services.html" class="service-link">
+              Learn More 
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </a>
           </div>
           
           <div class="service-card featured">
             <div class="featured-badge">Most Popular</div>
-            <div class="service-icon">📋</div>
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+            </div>
             <h3>Medical Transcription</h3>
             <p>Accurate, timely reports that help you keep charts current and compliant while you focus on patient care.</p>
-            <a href="services.html" class="service-link">Learn More →</a>
+            <a href="services.html" class="service-link">
+              Learn More 
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </a>
           </div>
           
           <div class="service-card">
-            <div class="service-icon">📊</div>
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
             <h3>Revenue Cycle & Admin</h3>
             <p>Revenue Cycle Management, inbound and outbound call center support, and administrative services tailored to your workflow.</p>
-            <a href="services.html" class="service-link">Learn More →</a>
+            <a href="services.html" class="service-link">
+              Learn More 
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -133,15 +197,40 @@
       <div class="container">
         <div class="value-content">
           <div class="value-text">
-            <span class="section-badge">Our Commitment</span>
+            <span class="section-label">
+              <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+              </svg>
+              Our Commitment
+            </span>
             <h2>Your Satisfaction Is Our Priority</h2>
             <p>Leveraging our extensive knowledge and years in business, we strive to provide you with an excellent customer experience. Our goal is to help reduce the documentation burden, increase revenue, and maximize productivity in your practice.</p>
             <p>We always make sure our clients are fully satisfied with our services and turnaround times.</p>
             <ul class="value-list">
-              <li>Reduce documentation burden</li>
-              <li>Increase practice revenue</li>
-              <li>Maximize productivity</li>
-              <li>Excellent customer experience</li>
+              <li>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Reduce documentation burden
+              </li>
+              <li>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Increase practice revenue
+              </li>
+              <li>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Maximize productivity
+              </li>
+              <li>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Excellent customer experience
+              </li>
             </ul>
           </div>
           <div class="value-image">
@@ -167,11 +256,14 @@
     <!-- CTA Section -->
     <section class="section cta-section">
       <div class="container">
-        <div class="">
-          <h2>Ready to Optimize Your Practice?</h2>
-          <p class="section-intro">If you have any questions, concerns, or feedback about our services, reach out to our staff today. We look forward to working with you!</p>
-          <a href="contact.html" class="btn btn-cta" style="margin-top: 4rem;">Contact Us Today →</a>
-        </div>
+        <h2>Ready to Optimize Your Practice?</h2>
+        <p class="section-intro">If you have any questions, concerns, or feedback about our services, reach out to our staff today. We look forward to working with you!</p>
+        <a href="contact.html" class="btn-cta">
+          Contact Us Today
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+          </svg>
+        </a>
       </div>
     </section>
 
@@ -185,7 +277,7 @@
           <img src="assets/images/logo.svg" alt="AATranscript" class="footer-logo">
         </div>
         <p>Software development, medical billing & transcription services.</p>
-        <span class="badge badge-hipaa">HIPAA-ready</span>
+        <span class="badge badge-success">HIPAA-ready</span>
       </div>
       
       <div class="footer-col">
@@ -213,7 +305,7 @@
       <div class="container">
         <div class="footer-bottom-content">
           <span>© 2025 AATranscript. All rights reserved.</span>
-          <a href="#top" class="back-to-top">Back to top ↑</a>
+          <a href="#top" class="back-to-top">Back to top →</a>
         </div>
       </div>
     </div>
