@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Software Development - AATranscript | Custom Healthcare Solutions</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/software-development.css">
+  <link rel="stylesheet" href="assets/css/product-pages.css">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body id="top">
   
@@ -21,10 +21,10 @@
     <nav class="menu" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a class="active" href="software-development.html">Software Development</a>
+      <!-- <a class="active" href="software-development.html">Software Development</a> -->
       <a href="about-us.html">About Us</a>
       <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
     </nav>
     <button class="burger" aria-label="Menu">
       <span></span>
@@ -37,7 +37,7 @@
   <main>
     
     <!-- Hero Section -->
-    <section class="dev-hero">
+    <section class="aatranscript-hero">
       <div class="container">
         <h1>Software Development</h1>
         <p class="subtitle">Custom Software, Automation, and Web Solutions</p>
@@ -46,57 +46,160 @@
     </section>
 
     <!-- Main Content -->
-    <section class="dev-content">
+    <section class="aatranscript-content">
       <div class="container">
         
         <!-- Our Expertise -->
-        <div class="dev-section expertise-section">
-          <h2>Our Expertise</h2>
-          <ul>
-            <li>Custom web and desktop applications</li>
-            <li>Workflow automation and process optimization</li>
-            <li>API integration with third-party systems (EHR, billing, or clearinghouses)</li>
-            <li>Database design and management</li>
-            <li>Secure cloud-based data solutions</li>
-            <li>Analytics dashboards and reporting tools</li>
+        <div class="service-section">
+          <h2>
+            <svg class="icon icon-lg" style="display: inline-block; vertical-align: middle; margin-right: 8px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+            Our Expertise
+          </h2>
+          <ul style="list-style: none; padding-left: 0; display: grid; gap: 12px; margin-top: 20px;">
+            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0; margin-top: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Custom web and desktop applications</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0; margin-top: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Workflow automation and process optimization</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0; margin-top: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>API integration with third-party systems (EHR, billing, or clearinghouses)</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0; margin-top: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Database design and management</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0; margin-top: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Secure cloud-based data solutions</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0; margin-top: 2px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Analytics dashboards and reporting tools</span>
+            </li>
           </ul>
         </div>
 
         <!-- Technology Stack -->
-        <div class="dev-section tech-section">
-          <h2>Technology Stack</h2>
+        <div class="service-section">
+          <h2>
+            <svg class="icon icon-lg" style="display: inline-block; vertical-align: middle; margin-right: 8px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+            </svg>
+            Technology Stack
+          </h2>
           <p>We leverage modern and scalable technologies for reliable performance and long-term flexibility:</p>
-          <ul>
-            <li>Python (Django, FastAPI)</li>
-            <li>JavaScript (React, Node.js)</li>
-            <li>PostgreSQL, MySQL, and cloud data storage</li>
-            <li>Integration with AWS, Azure, and Cloudflare environments</li>
+          <ul style="list-style: none; padding-left: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 20px;">
+            <li style="display: flex; align-items: center; gap: 12px; padding: 16px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                </svg>
+              </div>
+              <span style="font-weight: 500;">Python (Django, FastAPI)</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; padding: 16px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #f59e0b 0%, #fb923c 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                </svg>
+              </div>
+              <span style="font-weight: 500;">JavaScript (React, Node.js)</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; padding: 16px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/>
+                </svg>
+              </div>
+              <span style="font-weight: 500;">PostgreSQL, MySQL</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; padding: 16px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+              <div style="width: 40px; height: 40px; background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                </svg>
+              </div>
+              <span style="font-weight: 500;">AWS, Azure, Cloudflare</span>
+            </li>
           </ul>
         </div>
 
         <!-- Our Approach -->
-        <div class="dev-section approach-section">
-          <h2>Our Approach</h2>
+        <div class="service-section">
+          <h2>
+            <svg class="icon icon-lg" style="display: inline-block; vertical-align: middle; margin-right: 8px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+            </svg>
+            Our Approach
+          </h2>
           <p>Every software project begins with understanding your unique requirements. We then design, develop, and test using agile methodologies, ensuring the final product meets compliance, scalability, and user experience standards. Our team emphasizes clean UI, strong data security, and reliable long-term maintenance.</p>
         </div>
 
         <!-- Industries We Serve -->
-        <div class="dev-section industries-section">
-          <h2>Industries We Serve</h2>
+        <div class="service-section">
+          <h2>
+            <svg class="icon icon-lg" style="display: inline-block; vertical-align: middle; margin-right: 8px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            Industries We Serve
+          </h2>
           <p>Although our core strength lies in healthcare and medical billing systems, we also develop for:</p>
-          <ul>
-            <li>Legal and documentation services</li>
-            <li>Small businesses and startups</li>
-            <li>Educational and training organizations</li>
-            <li>Financial and reporting solutions</li>
+          <ul style="list-style: none; padding-left: 0; display: grid; gap: 12px; margin-top: 20px;">
+            <li style="display: flex; align-items: center; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Legal and documentation services</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Small businesses and startups</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Educational and training organizations</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px; padding: 12px; background: #f8fafc; border-radius: 8px;">
+              <svg style="width: 20px; height: 20px; color: #0d9488; flex-shrink: 0;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span>Financial and reporting solutions</span>
+            </li>
           </ul>
         </div>
 
         <!-- CTA Section -->
-        <div class="dev-section dev-cta">
+        <div class="cta-section">
           <h2>Get Started</h2>
           <p>Looking to build a custom application or automate part of your workflow?</p>
-          <a href="contact.html">Contact Us for a Consultation →</a>
+          <a href="contact.html" class="btn btn-primary">
+            Contact Us for a Consultation
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
         </div>
 
       </div>
@@ -112,7 +215,7 @@
           <img src="assets/images/logo.svg" alt="AATranscript" class="footer-logo">
         </div>
         <p>Software development, medical billing & transcription services.</p>
-        <span class="badge badge-hipaa">HIPAA-ready</span>
+        <span class="badge badge-success">HIPAA-ready</span>
       </div>
       
       <div class="footer-col">
@@ -140,7 +243,7 @@
       <div class="container">
         <div class="footer-bottom-content">
           <span>© 2025 AATranscript. All rights reserved.</span>
-          <a href="#top" class="back-to-top">Back to top ↑</a>
+          <a href="#top" class="back-to-top">Back to top →</a>
         </div>
       </div>
     </div>

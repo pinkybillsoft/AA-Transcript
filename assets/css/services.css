@@ -1,13 +1,7 @@
-/* ============================================
-   SERVICES PAGE - MODERN PROFESSIONAL DESIGN
-   ============================================ */
-
-/* ============================================
-   SERVICES HERO
-   ============================================ */
+/* Services Page - Professional */
 .services-hero {
-  background: var(--gradient-hero);
-  padding: var(--spacing-7xl) 0 var(--spacing-6xl);
+  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-blue) 100%);
+  padding: var(--space-16) 0 var(--space-12);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -16,63 +10,49 @@
 .services-hero::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: 
-    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 30%, rgba(8, 145, 178, 0.1) 0%, transparent 40%);
-  pointer-events: none;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.4;
 }
 
 .services-hero .container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .services-hero h1 {
-  color: #FFFFFF;
-  margin-bottom: var(--spacing-xl);
-  font-size: clamp(2.75rem, 6vw, 4rem);
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: var(--white);
+  margin-bottom: var(--space-3);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
 }
 
 .services-hero p {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: var(--font-size-xl);
-  max-width: 750px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  max-width: 700px;
   margin: 0 auto;
-  line-height: var(--line-height-relaxed);
 }
 
-/* ============================================
-   SERVICES GRID
-   ============================================ */
 .services-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: var(--spacing-4xl);
-  max-width: 1280px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-6);
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ============================================
-   SERVICE CARDS - UNIFIED MODERN DESIGN
-   ============================================ */
 .service-card {
-  background: var(--color-background);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-2xl);
-  padding: var(--spacing-3xl);
-  transition: all var(--transition-base);
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  transition: var(--transition);
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  box-shadow: var(--shadow-sm);
 }
 
 .service-card::before {
@@ -81,38 +61,21 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 5px;
-  background: var(--gradient-accent);
+  height: 4px;
+  background: var(--primary-blue);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition-base);
+  transition: var(--transition);
 }
 
-.service-card::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(8, 145, 178, 0.08) 0%, transparent 70%);
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform var(--transition-slow);
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--gray-300);
 }
 
 .service-card:hover::before {
   transform: scaleX(1);
-}
-
-.service-card:hover::after {
-  transform: translate(-50%, -50%) scale(2);
-}
-
-.service-card:hover {
-  transform: translateY(-12px);
-  box-shadow: var(--shadow-2xl);
-  border-color: var(--color-accent);
 }
 
 .service-card a {
@@ -122,126 +85,61 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  position: relative;
-  z-index: 1;
 }
 
 .service-card img {
-  width: 110px;
-  height: 110px;
-  margin-bottom: var(--spacing-xl);
-  border-radius: var(--radius-xl);
-  transition: transform var(--transition-base);
+  width: 80px;
+  height: 80px;
+  margin-bottom: var(--space-5);
+  border-radius: var(--radius-lg);
+  transition: transform 0.3s;
   object-fit: contain;
-  box-shadow: var(--shadow-md);
 }
 
 .service-card:hover img {
-  transform: scale(1.1) rotateY(10deg);
+  transform: scale(1.05);
 }
 
 .service-card h3 {
-  color: var(--color-text-primary);
-  font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacing-lg);
-  font-weight: var(--font-weight-bold);
-  transition: color var(--transition-base);
-}
-
-.service-card:hover h3 {
-  color: var(--color-accent);
+  color: var(--gray-900);
+  font-size: 22px;
+  margin-bottom: var(--space-3);
+  font-weight: 700;
 }
 
 .service-card p {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-relaxed);
+  color: var(--gray-600);
+  font-size: 15px;
+  line-height: 1.6;
   margin: 0;
 }
 
-/* Service Icon Code */
 .service-icon-code {
-  width: 110px;
-  height: 110px;
-  background: var(--color-surface);
-  border: 3px solid var(--color-border);
-  border-radius: var(--radius-xl);
+  width: 80px;
+  height: 80px;
+  background: var(--gray-50);
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
-  font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-2xl);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: var(--space-5);
   font-family: 'Courier New', monospace;
-  transition: all var(--transition-base);
-  box-shadow: var(--shadow-md);
+  transition: var(--transition);
 }
 
 .service-card:hover .service-icon-code {
-  background: var(--color-primary-ultra-light);
-  border-color: var(--color-accent);
-  color: var(--color-accent);
-  transform: scale(1.1) rotateY(10deg);
+  background: var(--primary-blue);
+  color: var(--white);
+  border-color: var(--primary-blue);
+  transform: scale(1.05);
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
-@media (max-width: 1200px) {
-  .services-grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-3xl);
-  }
-}
-
-@media (max-width: 900px) {
-  .services-grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-2xl);
-  }
-  
-  .service-card {
-    padding: var(--spacing-3xl);
-  }
-  
-  .service-card img,
-  .service-icon-code {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media (max-width: 600px) {
-  .services-hero {
-    padding: var(--spacing-5xl) 0 var(--spacing-4xl);
-  }
-  
-  .services-hero h1 {
-    font-size: clamp(2rem, 9vw, 2.75rem);
-  }
-  
-  .services-hero p {
-    font-size: var(--font-size-lg);
-  }
-  
+@media (max-width: 768px) {
   .services-grid-container {
     grid-template-columns: 1fr;
-    gap: var(--spacing-xl);
-    padding: var(--spacing-5xl) 0;
-  }
-  
-  .service-card {
-    padding: var(--spacing-2xl);
-  }
-  
-  .service-card img,
-  .service-icon-code {
-    width: 90px;
-    height: 90px;
-  }
-  
-  .service-card h3 {
-    font-size: var(--font-size-xl);
   }
 }
